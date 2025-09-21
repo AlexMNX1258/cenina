@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Quiero Mucho</title>
+    <h1>TE QUIERO NINA<br></h1>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('img.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        h1 {
+    font-size: 48px;
+    color: #ff4081;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: -10px;
+    left: 0;
+    background: linear-gradient(90deg, transparent, #ff4081, transparent);
+    border-radius: 10px;
+    animation: wave 1.5s linear infinite;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .photo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Aumenta el espacio entre imágenes */
+            margin-bottom: 20px;
+        }
+
+        .photo-grid img {
+            width: 165px; /* Cambia el tamaño de las imágenes si lo deseas */
+            height: 165px; /* Cambia el tamaño de las imágenes si lo deseas */
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid white;
+        }
+
+        .poem {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #FF4081;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-container button:hover {
+            background-color: #e91e63;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="photo-grid">
+            <img src="img1.jpg" alt="Foto 1">
+            <img src="img2.png" alt="Foto 2">
+        </div>
+        
+        <div class="poem">
+            "Eres una amiga hermosa e increíble, una luz constante que ilumina mis días con tu alegría, fuerza y bondad. Gracias por ser ese apoyo sincero y esa sonrisa que siempre hace todo mejor."
+        </div>
+        
+        <div class="button-container">
+            <button onclick="location.href='Flor.html'">Un Pequeño Regalo</button>
+        </div>
+    </div>
+</body>
+</html>
